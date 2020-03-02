@@ -11,5 +11,6 @@ The file structure is as follows
 1. polyganize_rasters.py: used to convert the ISO raster from fix_country_bounds_iso_numbers.py to polygons to clip rasters in clip_rasters_by_country_bounds.py
 1. reproject_urban_built_up.py: converts 1 kilometer impervious surface percent to hectares of urban built up per pixel at the 10 kilometer resolution
 1. upload_GLPS_to_gcloud.py: uploads the Global Livestock Production Systems raster to Google Cloud Storage
+1. upload_LPJmL_to_gcloud.py: uploads LPJmL potential yield data to Google Cloud Storage
 1. upload_hyde_to_gcloud.py: uploads HYDE data to Google Cloud Storage
 1. upload_spam_to_gcloud.py: uploads SPAM data to Google Cloud
