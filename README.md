@@ -4,6 +4,7 @@ This repository contains code for allocating estimates of cropland and livestock
 The file structure is as follows
 1. Average_LPJmL.py: used to average the rainfed and irrigated potential yields from LPJmL.
 1. Expansion_Algorithm_v6.py: used to allocate changes in cropland and livestock areas.
+1. GetLandAreaPerPixel: uses Google Earth Engine to calculate the maximum land area per pixel
 1. clip_rasters_by_country_bounds.py: used to clip rasters of 2010 values to country boundaries, including potential yield, cropland, livestock, travel time to cities, maximum areas per pixel, and urban areas.
 1. convert_gaul_to_iso_raster.py: used to convert GAUL country boundaries shapefile to 10 kilometer raster 
 1. convert_hyde_km_to_ha.py: converts the HYDE livestock areas from square kilometers per pixel to square hectares per pixel
