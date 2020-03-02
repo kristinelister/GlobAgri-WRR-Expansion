@@ -4,12 +4,6 @@ import numpy as np
 import rasterio
 import glob
 import subprocess
-#docker push kristinelister/basic-geo-python-docker:latest
-#docker.io/kristinelister/basic-geo-python-docker:latest
-#gcsfuse globagri-upload-bucket globagriexpansion/
-#gcr.io/globagri/basic-geo-python-docker
-#sudo umount ~/globagriexpansion/
-#gsutil -m cp ExpansionRound1.py gs://globagri-upload-bucket/Code/
 
 base_dir = '/home/globagriwrr001/globagriexpansion'
 output_dir = '/home/globagriwrr001/local'
