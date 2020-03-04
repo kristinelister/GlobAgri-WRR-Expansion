@@ -19,6 +19,5 @@ cmd = ('gdal_calc.py -A {} --outfile={} --calc="A*100" --NoDataValue=-9999').for
 print(cmd)
 subprocess.check_output(cmd,shell=True)
 
-# rt.raster_clip(spam_ref,tem_km_area_ha_mol,tem_km_area_ha,resampling_method='average',srcnodata=-200,dstnodata=-200)
 
 
