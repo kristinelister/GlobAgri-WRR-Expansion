@@ -1,4 +1,4 @@
-This code was run using Google Earth Engine and can be found by following (this link)[https://code.earthengine.google.com/0c3998022528806bed00e6aa7aa5e522].
+This code was run using Google Earth Engine and can be found by following [this link](https://code.earthengine.google.com/0c3998022528806bed00e6aa7aa5e522).
 The code is also copied below:
 
 //Define geometry to export over
