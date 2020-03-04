@@ -18,5 +18,6 @@ The file structure is as follows
 1. upload_LPJmL_to_gcloud.py: uploads LPJmL potential yield data to Google Cloud Storage
 1. upload_hyde_to_gcloud.py: uploads HYDE data to Google Cloud Storage
 1. upload_spam_to_gcloud.py: uploads SPAM data to Google Cloud
+1. visualize_agriculture_rasters.py: used to create images of 2050 agricultural areas from expansion algorithm
 1. visualize_country_totals.py: used to create images of country level changes in cropland and grazing land from GlobAgri_WRR
-1. visualize_expansion_rasters.py: used to create images of results from expansion algorithm
+1. visualize_expansion_rasters.py: used to create images of 2010 - 2050 changes in agricultural land from expansion algorithm
