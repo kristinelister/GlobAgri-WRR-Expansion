@@ -5,21 +5,6 @@ import os
 import pandas as pd
 import numpy as np
 
-#docker push kristinelister/basic-geo-python-docker:latest
-#docker.io/kristinelister/basic-geo-python-docker:latest
-#gcsfuse globagri-upload-bucket globagriexpansion/
-#gcr.io/globagri/basic-geo-python-docker
-#sudo umount ~/globagriexpansion/
-#gsutil -m cp ExpansionRound1.py gs://globagri-upload-bucket/Code/
-
-base_dir = '/home/globagriwrr001/globagriexpansion'
-output_dir = '/home/globagriwrr001/local'
-GS_BUCKET = 'gs://globagri-upload-bucket/'
-#os.chdir(base_dir)
-
-
-#iso_raster_f = os.path.join(base_dir,'OtherFiles','GlobAgri_ISO.tif')
-#iso_raster_dir = '/Users/kristine/Downloads/ISO_rasters'
 iso_raster_dir = '/Users/kristine/WRI/NationalGeographic/Phase2/Country_Bounds/'
 out_directory = '/Users/kristine/WRI/NationalGeographic/Phase2/Country_Bounds/Country_shapes'
 os.chdir(iso_raster_dir)
@@ -31,7 +16,6 @@ globagri_regions = ['CHN','SUN', 'BAL'];
 SUN_iso_list = ['ARM', 'AZE', 'BLR', 'GEO', 'KAZ', 'KGZ', 'MDA', 'RUS', 'TJK', 'TKM', 'UKR', 'UZB'];
 BAL_iso_list = ['BEL', 'LUX'];
 YUG_iso_list = ['BIH','HRV','MKD','MNE','SRB','SVN']
-# Note that Globagri has separate China regions, and SPAM has one CHN as aggregated entry
 CHN_iso_list = ['CHN', 'TWN', 'HKG']
 
 def convert_iso_num(in_number,country_df):
@@ -52,7 +36,6 @@ src = rasterio.open(iso_raster_f)
 data = src.read(1)
 unique_values = np.unique(data)
 unique_values = [x for x in unique_values if x>0]
-#print(unique_values)
 
 
 for i,pixel_value in enumerate(unique_values):
